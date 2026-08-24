@@ -1,0 +1,52 @@
+# This is what makes the whole system "automatic": GitHub runs fetch.py for
+# you, on a schedule, for free, without your PC or phone needing to be on.
+#
+# It runs 4 times on weekdays and commits the updated report.txt/data.json
+# straight back into this repository. Your Windows and Android widgets then
+# just read those files' raw URLs.
+name: Update finance data
+
+on:
+  schedule:
+    # All times are UTC (GitHub Actions doesn't support other timezones).
+    # These four times land roughly around: market open, midday, afternoon,
+    # and just after market close, for the US markets (NYSE/Nasdaq).
+    # Note: because US clocks change for daylight saving and these don't,
+    # the times will drift by about an hour for part of the year -- that's
+    # fine for a "check in a few times a day" dashboard. If you want to
+    # change the schedule, https://crontab.guru is a handy way to build a
+    # cron expression.
+    - cron: "45 13 * * 1-5"
+    - cron: "0 16 * * 1-5"
+    - cron: "30 18 * * 1-5"
+    - cron: "15 20 * * 1-5"
+  workflow_dispatch: {} # lets you click "Run workflow" in the Actions tab to test it manually
+
+permissions:
+  contents: write # needed so the workflow can commit the updated files back
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch the latest data
+        run: python fetch.py
+
+      - name: Commit the updated report, if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add report.txt data.json
+          git diff --quiet --cached || git commit -m "Update finance data"
+          git push
