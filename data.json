@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-08-24T21:57:10.778811+00:00",
+  "indicators": [
+    {
+      "symbol": "^GSPC",
+      "label": "S&P 500",
+      "ok": false,
+      "error": "no price returned"
+    },
+    {
+      "symbol": "^IXIC",
+      "label": "Nasdaq",
+      "ok": false,
+      "error": "no price returned"
+    },
+    {
+      "symbol": "^DJI",
+      "label": "Dow Jones",
+      "ok": false,
+      "error": "no price returned"
+    },
+    {
+      "symbol": "AAPL",
+      "label": "Apple",
+      "ok": false,
+      "error": "no price returned"
+    },
+    {
+      "symbol": "MSFT",
+      "label": "Microsoft",
+      "ok": false,
+      "error": "no price returned"
+    }
+  ]
+}
