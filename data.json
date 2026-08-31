@@ -1,35 +1,40 @@
 {
-  "updated_at": "2026-08-31T13:54:45.261952+00:00",
+  "updated_at": "2026-08-31T16:03:16.254519+00:00",
   "indicators": [
     {
       "symbol": "SPY",
       "label": "S&P 500 (SPY)",
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=15)"
+      "price": 765.32,
+      "change_pct": -0.5238188080847433,
+      "ok": true
     },
     {
       "symbol": "QQQ",
       "label": "Nasdaq 100 (QQQ)",
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=15)"
+      "price": 713.79,
+      "change_pct": -0.36849378166743246,
+      "ok": true
     },
     {
       "symbol": "DIA",
       "label": "Dow Jones (DIA)",
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=15)"
+      "price": 531.74,
+      "change_pct": -0.6204911598699093,
+      "ok": true
     },
     {
       "symbol": "AAPL",
       "label": "Apple",
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=15)"
+      "price": 314.65,
+      "change_pct": -1.5796058805129847,
+      "ok": true
     },
     {
       "symbol": "MSFT",
       "label": "Microsoft",
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=15)"
+      "price": 509.91,
+      "change_pct": -0.7049247366268665,
+      "ok": true
     }
   ]
 }
