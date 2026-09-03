@@ -1,8 +1,8 @@
 Market Update
-S&P 500 (SPY)           772.83    +1.00%
-Nasdaq 100 (QQQ)        717.20    +1.12%
-Dow Jones (DIA)         536.98    +1.20%
-Apple                   329.98    +1.54%
-Microsoft               514.15    +3.49%
+S&P 500 (SPY)           773.72    +1.12%
+Nasdaq 100 (QQQ)        718.57    +1.32%
+Dow Jones (DIA)         536.94    +1.19%
+Apple                   327.09    +0.66%
+Microsoft               513.43    +3.34%
 
-Updated: 2026-09-03 16:05 UTC
+Updated: 2026-09-03 18:42 UTC
