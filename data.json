@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-29T18:53:13.479510+00:00",
+  "updated_at": "2026-09-29T20:21:16.824755+00:00",
   "indicators": [
     {
       "symbol": "SPY",
       "label": "S&P 500 (SPY)",
-      "price": 764.76,
-      "change_pct": -0.11102258329959414,
+      "price": 764.2,
+      "change_pct": -0.1841668734734353,
       "ok": true
     },
     {
       "symbol": "QQQ",
       "label": "Nasdaq 100 (QQQ)",
-      "price": 738.69,
-      "change_pct": 0.29326707669749796,
+      "price": 737.93,
+      "change_pct": 0.19008051267429396,
       "ok": true
     },
     {
       "symbol": "DIA",
       "label": "Dow Jones (DIA)",
-      "price": 512.59,
-      "change_pct": -0.2781992918563383,
+      "price": 512.88,
+      "change_pct": -0.22178125364771534,
       "ok": true
     },
     {
       "symbol": "AAPL",
       "label": "Apple",
-      "price": 331.37,
-      "change_pct": -2.077423167848692,
+      "price": 329.4,
+      "change_pct": -2.6595744680851063,
       "ok": true
     },
     {
       "symbol": "MSFT",
       "label": "Microsoft",
-      "price": 510.89,
-      "change_pct": 0.3279525548878597,
+      "price": 508.96,
+      "change_pct": -0.051058481599318126,
       "ok": true
     }
   ]
