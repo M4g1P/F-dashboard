@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T21:07:47.138757+00:00",
+  "updated_at": "2026-11-12T21:58:33.347507+00:00",
   "indicators": [
     {
       "symbol": "SPY",
@@ -18,15 +18,15 @@
     {
       "symbol": "DIA",
       "label": "Dow Jones (DIA)",
-      "price": 522.57,
-      "change_pct": -0.3565708183967669,
+      "price": 522.47,
+      "change_pct": -0.3756387765998069,
       "ok": true
     },
     {
       "symbol": "AAPL",
       "label": "Apple",
-      "price": 354.838,
-      "change_pct": -0.2227033714815885,
+      "price": 354.88,
+      "change_pct": -0.21089334420605685,
       "ok": true
     },
     {
